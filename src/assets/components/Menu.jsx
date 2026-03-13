@@ -33,7 +33,7 @@ function Menu() {
   return (
     <>
       <div className="px-4 mt-6">
-        <h1 className="text-2xl font-bold mb-4">What Do You Crave?</h1>
+        <h1 className="text-2xl font-bold mb-4">What 3 Do You Crave?</h1>
 
         <div className="flex md:justify-between gap-5 overflow-x-auto pb-2">
           {menuItems.map((item) => (
