@@ -12,38 +12,48 @@ function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative">
+    <header className="w-full bg-white shadow-md px-3 py-2">
       {/* NAVBAR */}
-      <div className="flex items-center gap-2 px-2 py-1 bg-white justify-between w-full shadow-md">
-        <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between gap-2">
+
+        {/* LEFT SIDE */}
+        <div className="flex items-center gap-2 min-w-0">
+
           <FontAwesomeIcon
             icon={faBars}
-            className="text-2xl cursor-pointer"
+            className="text-xl cursor-pointer flex-shrink-0"
             onClick={() => setMenuOpen(true)}
           />
 
           <img
-            src="../Logo/logo-pink.png"
-            alt="logo"
-            width={40}
-            className="rounded-xl"
+            src="/Logo/logo-pink.png"
+            alt="KaiTea"
+            className="w-10 h-10 rounded-lg flex-shrink-0 "
           />
 
-          <div className="flex bg-gray-300 p-2 rounded-2xl gap-2 items-center">
-            <FontAwesomeIcon icon={faLocationDot} />
+          {/* LOCATION INPUT */}
+          <div className="flex items-center gap-1 bg-gray-200 px-2 py-1 rounded-full min-w-0">
+
+            <FontAwesomeIcon
+              icon={faLocationDot}
+              className="text-sm flex-shrink-0 text-gray-600"
+            />
 
             <input
-              type="search"
-              placeholder="Enter Your Address"
-              className="bg-transparent focus:outline-none"
+              type="text"
+              placeholder="Address"
+              className="bg-transparent outline-none text-sm w-full min-w-100 py-2 text-lg"
             />
+
           </div>
+
         </div>
 
-        <FontAwesomeIcon
-          icon={faCartShopping}
-          className="text-xl bg-pink-500 text-white p-2 rounded-md"
-        />
+        {/* CART */}
+        <button className="bg-pink-500 text-white p-2 rounded-lg flex-shrink-0">
+          <FontAwesomeIcon icon={faCartShopping} />
+        </button>
+
       </div>
 
       {/* DARK OVERLAY */}
