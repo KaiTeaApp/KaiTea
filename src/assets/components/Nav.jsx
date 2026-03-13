@@ -23,7 +23,7 @@ function Menu() {
           />
 
           <img
-            src="./public/Logo/logo-pink.png"
+            src="../Logo/logo-pink.png"
             alt="logo"
             width={40}
             className="rounded-xl"
