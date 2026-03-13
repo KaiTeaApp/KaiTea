@@ -6,27 +6,27 @@ function Menu() {
     {
       id: 1,
       name: "Cake Slices",
-      image: "./public/img/bigSlice.png",
+      image: "../img/bigSlice.png",
     },
     {
       id: 2,
       name: "Premium Cakes",
-      image: "./public/img/pre-cake.png",
+      image: "../img/pre-cake.png",
     },
     {
       id: 3,
       name: "Custard",
-      image: "./public/img/curstard.png",
+      image: "../img/curstard.png",
     },
     {
       id: 4,
       name: "Scones",
-      image: "./public/img/1.png",
+      image: "../img/1.png",
     },
     {
       id: 5,
       name: "Specials",
-      image: "./public/img/cake-f.png",
+      image: "../img/cake-f.png",
     },
   ];
 
@@ -44,12 +44,12 @@ function Menu() {
       <div className="promo-box p-2">
         <div className="flex md:justify-evenly gap-5 overflow-x-auto p-2">
           <img
-            src="./public/img/promo.png"
+            src="../img/promo.png"
             className="w-70 rounded-2xl"
             alt=""
           />
           <img
-            src="./public/img/promo2.png"
+            src="../img/promo2.png"
             className="w-70 rounded-2xl"
             alt=""
           />
