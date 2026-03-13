@@ -14,7 +14,7 @@ function Menu() {
   return (
     <header className="relative">
       {/* NAVBAR */}
-      <div className="flex items-center gap-2 px-2 py-1 bg-amber-50 justify-between w-full shadow-md">
+      <div className="flex items-center gap-2 px-2 py-1 bg-white justify-between w-full shadow-md">
         <div className="flex items-center gap-3">
           <FontAwesomeIcon
             icon={faBars}
@@ -23,9 +23,9 @@ function Menu() {
           />
 
           <img
-            src="./public/logo/logo-pink.png"
+            src="./public/Logo/logo-pink.png"
             alt="logo"
-            width={50}
+            width={40}
             className="rounded-xl"
           />
 

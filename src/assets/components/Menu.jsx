@@ -1,5 +1,6 @@
 import MenuCard from "./MenuCard";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Menu() {
   const menuItems = [
     {
@@ -54,6 +55,15 @@ function Menu() {
           />
         </div>
       </div>
+       <header className="flex justify-between items-center p-4 shadow-md bg-white">
+
+      <div className="flex items-center gap-2">
+        <FontAwesomeIcon icon={faLocationDot} className="text-red-500"/>
+        <span className="font-semibold">Johannesburg</span>
+      </div>
+
+      <FontAwesomeIcon icon={faMagnifyingGlass} className="text-xl"/>
+    </header>
     </>
   );
 }
